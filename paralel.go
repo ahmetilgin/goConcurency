@@ -23,16 +23,7 @@ func printer(c chan string) {
 		time.Sleep(time.Second / 5)
 	}
 }
-func barnagibiryap(c chan string) {
-	for i := 0; ; i++ {
-		c <- "1"
-	}
-}
-func barnah(b chan string) {
-	m := <-b
-	fmt.Println(m)
 
-}
 func main() {
 	var c chan string = make(chan string)
 
